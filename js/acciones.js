@@ -7,11 +7,11 @@ document.addEventListener("deviceready", onDeviceReady,false);
 
 function onDeviceReady() {
 
- $('#posicion').on('click',function(){
+ $('#posicion').on('tap',function(){
  	getPosition();
 });
 
- $('#watch').on('click',function(){
+ $('#watch').on('tap',function(){
  	watchPosition();
 });
 
@@ -47,7 +47,7 @@ function watchPosition(){
       timeout: 3000,
       enableHighAccuracy :true, 
 }
-}
+
 var watchID=navigator.geolocation.watchPosition(onSuccess,onError,options);
 function onSuccess(position) {
 	$('#latitud').html(position.coords.latitude);
