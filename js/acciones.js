@@ -33,14 +33,12 @@ function onSuccess(position){
   	    'Altitude Accuracy:'+position.coords.altitudeAccuracy+'\n'+
           'Heading:'+position.coords.heading+'\n'+
   	          'Speed:'+position.coords.speed+'\n'+
-  	  'Timestamp'+position.coords.timestamp+'\n');
-
+  	  'Timestamp:'+position.coords.timestamp+'\n');
 };
-
 
 function onError(error){
 	alert('code:'+error.code+'\n'+'message:'+error.message+'\n');
-                        }
+     }
 }
 
 function watchPosition(){
