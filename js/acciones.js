@@ -21,14 +21,14 @@ function getPosition(){
 var watchID=navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
 function onSuccess(postion){
 
-  alert('Latitude:'+postion.coords.latitude+'\n'+
-  	  'Longitude:'+postion.coords.longitude+'\n'+
-  	    'Altitude:'+postion.coords.altitude+'\n'+
-  	    'Accuracy:'+postion.coords.accuracy+'\n'+
-  	    'Altitude Accuracy:'+postion.coords.altitudeAccuracy+'\n'+
-          'Heading:'+postion.coords.heading+'\n'+
-  	          'Speed:'+postion.coords.speed+'\n'+
-  	  'Timestamp'+postion.coords.timestamp+'\n');
+  alert('Latitude:'+position.coords.latitude+'\n'+
+  	  'Longitude:'+position.coords.longitude+'\n'+
+  	    'Altitude:'+position.coords.altitude+'\n'+
+  	    'Accuracy:'+position.coords.accuracy+'\n'+
+  	    'Altitude Accuracy:'+position.coords.altitudeAccuracy+'\n'+
+          'Heading:'+position.coords.heading+'\n'+
+  	          'Speed:'+position.coords.speed+'\n'+
+  	  'Timestamp'+position.coords.timestamp+'\n');
 
 };
 
@@ -47,14 +47,14 @@ function watchPosition(){
 
 var watchID=navigator.geolocation.watchPosition(onSuccess,onError,options);
 function onSuccess(postion) {
-	$('#latitud').html(postion.coords.latitude);
-	$('#longitud').html(postion.coords.longitude);
-	$('#altitud').html(postion.coords.altitude);
-    $('#accuracy').html(postion.coords.accuracy);
-	$('#aaccuracy').html(postion.coords.altitudeAccuracy);
-	$('#headingg').html(postion.coords.heading);
-	$('#speed').html(postion.coords.speed);
-	$('#timestamp').html(postion.coords.timestamp);
+	$('#latitud').html(position.coords.latitude);
+	$('#longitud').html(position.coords.longitude);
+	$('#altitud').html(position.coords.altitude);
+    $('#accuracy').html(position.coords.accuracy);
+	$('#aaccuracy').html(position.coords.altitudeAccuracy);
+	$('#headingg').html(position.coords.heading);
+	$('#speed').html(position.coords.speed);
+	$('#timestamp').html(position.coords.timestamp);
 
 };
 
