@@ -47,7 +47,7 @@ function watchPosition(){
       timeout: 3000,
       enableHighAccuracy :true, 
 }
-
+}
 var watchID=navigator.geolocation.watchPosition(onSuccess,onError,options);
 function onSuccess(position) {
 	$('#latitud').html(position.coords.latitude);
